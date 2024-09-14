@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>SalaServlet</servlet-name>
+        <servlet-class>Controllers.SalaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <servlet-class>Controllers.UsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReservaServlet</servlet-name>
+        <servlet-class>Controllers.ReservaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SalaServlet</servlet-name>
+        <url-pattern>/SalaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/UsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReservaServlet</servlet-name>
+        <url-pattern>/ReservaServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
